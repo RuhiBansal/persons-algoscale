@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="formPersons">
+    <form id="form1">
+        Name : <input id="name" type="text" name="name"><br/>
+        Birth year: <input id="birth" type="text" name="birth"><br/>
+        death year: <input id="death" type="text" name="death"><br/>
+        <button  id="submit" type="button" name="submit" value="submit" onclick="onSubmit()">submit</button>
+    </form>
+</div>
+
+<div id="personsDetail">
+    <table id="persons">
+        <tr>
+        <th>Person name</th>
+        <th>Birth year</th>
+        <th>Death year</th>
+        </tr>
+    </table>
+</div>
+<button  id="solve" type="button" name="solve" value="solve" onclick="findRange()">solve</button>
+<div id="range"></div>
+
+<script src="jquery-1.12.3.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
